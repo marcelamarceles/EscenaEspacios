@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <!-- LIBRERIAS DE COLISIONES Y FÍSICAS-->
+        
+    <script
+      src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script> 
+  
+    <!-- MOVIMIENTO DE LA CAMARA -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    <title>memorias de percepción austera</title>
+</head>
+<body>
+    <a-entity movement-controls kinematic-body>
+        <a-entity id="camera" camera position="0.671 3 5.500" look-controls></a-entity>
+      </a-entity>
+
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="jul8" src="assets\jul8bien.glb" ></a-asset-item>
+            <a-asset-item id="agos11" src="assets\agos11.glb"></a-asset-item>
+            <a-asset-item id="dic8" src="assets\dic8.glb"></a-asset-item>
+            <a-asset-item id="dic17" src="assets\dic17.glb"></a-asset-item>
+            <a-asset-item id="dic28" src="assets\dic28.glb"></a-asset-item>
+            <a-asset-item id="dic29b" src="assets\dic29b.glb"></a-asset-item>
+            <a-asset-item id="esca" src="assets\esca.glb"></a-asset-item>
+            <a-asset-item id="feb9" src="assets\feb9.glb"></a-asset-item>
+            <a-asset-item id="feb10" src="assets\feb10.glb"></a-asset-item>
+            <a-asset-item id="feb11" src="assets\feb11.glb"></a-asset-item>
+            <a-asset-item id="jun18" src="assets\jun18.glb"></a-asset-item>
+            <a-asset-item id="may10" src="assets\may10.glb"></a-asset-item>
+            <a-asset-item id="may28" src="assets\may28.glb"></a-asset-item>
+            <a-asset-item id="nov6" src="assets\nov6.glb"></a-asset-item>
+            <a-asset-item id="nov10" src="assets\nov10.glb"></a-asset-item>
+            <a-asset-item id="nov20" src="assets\nov20.glb"></a-asset-item>
+            <a-asset-item id="nov23" src="assets\nov23.glb"></a-asset-item>
+            <a-asset-item id="oct9" src="assets\oct9.glb"></a-asset-item>
+            <a-asset-item id="sep12" src="assets\sept12.glb"></a-asset-item>
+            <a-asset-item id="sinfecha" src="assets\sinfecha.glb"></a-asset-item>
+            <audio id="below" src="assets\So BelowPe.mp3" preload="auto"></audio>
+        </a-assets>
+        <a-plane position="0 0.018 0" rotation="-90 0 0" width="1" height="1" color="#DC143C"></a-plane>
+<a-gltf-model src="#jul8" position="-16.509 0.018 11.791" rotation=" 0 135 0" ></a-gltf-model>
+<a-gltf-model src="#agos11" position="0.437 0.018 14.870" rotation="0 180 0"></a-gltf-model>
+<a-gltf-model src="#dic8" position="-11.245 0.493 3.785" rotation="0 0 0"></a-gltf-model>
+<a-gltf-model src="#dic17" position="11.867 0.018 12.829" rotation="0 -45 0"></a-gltf-model>
+<a-gltf-model src="#dic28" position="-7.800 0.018 11.390" ></a-gltf-model>
+<a-gltf-model src="#dic29b" position="10.059 0.018 21.992" rotation="0 -45 0"></a-gltf-model>
+<a-gltf-model src="#esca" position="-5.187 0.018 -26.531"></a-gltf-model>
+<a-gltf-model src="#feb9" position="6.791 0.018 0"></a-gltf-model>
+<a-gltf-model src="#feb10" position="-6.761 0.018 19.168" rotation="0 90 0" scale="0.330 1 1"></a-gltf-model>
+<a-gltf-model src="#feb11" position="16.388 0.018 0" rotation="0 -180 0" scale="0.5 0.5 0.5"></a-gltf-model>
+<a-gltf-model src="#jun18" position="-20.531 0.407 -4.437"></a-gltf-model>
+<a-gltf-model src="#may10" position="1.660 0.018 3.564" rotation="0 180 0"></a-gltf-model>
+<a-gltf-model src="#may28" position="-19.816 5.279 13.040"></a-gltf-model>
+<a-gltf-model src="#nov6" position="5.525 3.824 -16.695" rotation="0 0 -90"></a-gltf-model>
+<a-gltf-model src="#nov10" position="-25.560 3.483 10.396" rotation="45 148.430 -1.240"></a-gltf-model>
+<a-gltf-model src="#nov20" position="1.967 0.018 0.029"></a-gltf-model>
+<a-gltf-model src="#nov23" position="8.394 0.018 12.114" rotation="0 45 0"></a-gltf-model>
+<a-gltf-model src="#oct9" position="-3.665 0.407 -16.644" rotation="0 180 0"></a-gltf-model>
+<a-gltf-model src="#sep12" position="-1.682 0.407 -6.249"></a-gltf-model>
+<a-gltf-model src="#sinfecha" position="-2.895 0.018 27.073" rotation="0 180 0"></a-gltf-model>
+<a-entity sound="src:#below; autoplay: true" position="-7.800 0.018 11.390" ></a-entity>
+<a-entity environment="preset: tron; groundColor: #445; grid: cross"></a-entity>
+<a-entity light="type:  point;  intensity:  0.3;  distance:  50;  decay:  1.91;  groundColor:  #CD5C5C;  color:  #6495ED;  penumbra:  0"
+          position="0.083 10 8.464"></a-entity>
+ <a-entity light="type:  point;  intensity:  0.3;  distance:  50;  decay:  1.91;  groundColor:  #CD5C5C;  color:  #6495ED;  penumbra:  0"
+          position="-3.216 5.872 -13.637"></a-entity>
+</a-scene>
+</body>
+</html>
